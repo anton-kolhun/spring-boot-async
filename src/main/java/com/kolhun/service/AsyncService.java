@@ -1,4 +1,4 @@
-package com.moodys.service;
+package com.kolhun.service;
 
 
 import org.springframework.scheduling.annotation.Async;

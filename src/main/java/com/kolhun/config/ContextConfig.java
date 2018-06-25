@@ -1,4 +1,4 @@
-package com.moodys.config;
+package com.kolhun.config;
 
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -12,7 +12,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import java.util.concurrent.Executor;
 
 @Configuration
-@ComponentScan("com.moodys")
+@ComponentScan("com.kolhun")
 @EnableWebMvc
 @EnableAutoConfiguration
 @EnableAsync

@@ -1,4 +1,4 @@
-package com.moodys.config;
+package com.kolhun.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
