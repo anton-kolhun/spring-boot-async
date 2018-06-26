@@ -1,13 +1,14 @@
-package com.kolhun.config;
+package com.kolhun;
 
+import com.kolhun.config.ContextConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EmbeddedConfig {
+public class AsyncApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(ContextConfig.class, args);
+        SpringApplication.run(AsyncApp.class, args);
 
     }
 }
