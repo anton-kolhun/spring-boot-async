@@ -40,4 +40,11 @@ public class Controller {
         return entity;
     }
 
+    @RequestMapping("async")
+    public String doAsync() throws Exception {
+        Future<Void> res =  asyncService.doAsync();
+        res.get();
+        return "test";
+    }
+
 }

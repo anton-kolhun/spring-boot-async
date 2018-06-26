@@ -7,7 +7,7 @@
     </appender>
 
 
-    <root level="debug">
+    <root level="error">
         <appender-ref ref="CONSOLE"/>
     </root>
 

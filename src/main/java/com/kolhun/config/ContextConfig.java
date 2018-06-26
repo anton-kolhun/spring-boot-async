@@ -1,6 +1,7 @@
 package com.kolhun.config;
 
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -22,7 +23,7 @@ public class ContextConfig extends AsyncConfigurerSupport {
     public Executor getAsyncExecutor() {
         ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
         executor.setCorePoolSize(1);
-       //executor.setMaxPoolSize(6);
+        executor.setMaxPoolSize(1);
         executor.setQueueCapacity(0);// once reached - core increases by 1 (until max pool size)
         executor.setThreadNamePrefix("AsyncThread-");
         executor.initialize();
